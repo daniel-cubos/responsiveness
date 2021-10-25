@@ -4,7 +4,7 @@ footer {
   justify-content: space-between;
   height: 250px;
   color: white;
-  margin-top: 80px;
+  margin-top: 8rem;
   width: 86%;
   padding: 0 4%;
 }
@@ -20,13 +20,13 @@ footer img {
   justify-content: center;
   width: 30%;
   border-right: 1px solid gray;
-  padding-right: 20px;
+  padding-right: 2rem;
   height: 80%;
 }
 
 .footer-right {
   width: 70%;
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -41,7 +41,7 @@ footer img {
   }
   .footer-right {
     border-top: 1px solid grey;
-    padding-top: 15px;
-    margin-bottom: 20px;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
   }
 }

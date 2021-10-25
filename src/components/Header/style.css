@@ -6,7 +6,7 @@ header {
   color: white;
   width: 86%;
   padding: 0 4%;
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .logo {
@@ -18,13 +18,13 @@ header {
   header {
     flex-direction: column;
     height: auto;
-    margin: 20px 0;
+    margin: 2rem 0;
   }
 }
 
 @media (max-width: 540px) {
   .logo {
-    margin-top: 30px;
+    margin-top: 3rem;
   }
   header {
     flex-direction: column;
