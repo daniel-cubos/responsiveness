@@ -2,8 +2,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
-  background-color: black;
+  height: 144px;
   color: white;
-  padding: 5px;
+  padding: 0 30px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  color: #FED530;
 }

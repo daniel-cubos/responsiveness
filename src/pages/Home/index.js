@@ -24,15 +24,15 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <main>
       <Header />
-      <div>
+      <div className="section-movies">
         {movies.map((movie) => (
           <MovieCard key={movie.id} cover={movie.poster_path} title={movie.title} />
         ))}
       </div>
       <Footer />
-    </div>
+    </main>
   );
 }
 
