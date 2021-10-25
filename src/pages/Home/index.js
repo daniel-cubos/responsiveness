@@ -16,7 +16,6 @@ function App() {
       )
 
       const { results } = await response.json();
-      console.log(results)
       setMovies(results);
     }
 
@@ -24,15 +23,15 @@ function App() {
   }, [])
 
   return (
-    <main>
+    <div className="container-home">
       <Header />
-      <div className="section-movies">
+      <section className="section-movies">
         {movies.map((movie) => (
           <MovieCard key={movie.id} cover={movie.poster_path} title={movie.title} />
         ))}
-      </div>
+      </section>
       <Footer />
-    </main>
+    </div>
   );
 }
 

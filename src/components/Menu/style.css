@@ -1,0 +1,62 @@
+.menu {
+  display: flex;
+  color: #ffffff;
+}
+
+.menu li {
+  list-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #FED530;
+}
+
+.icon-menu, .icon-close {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  .menu {
+    display: none;
+    z-index: 3;
+    color: #000000;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu li {
+    margin: 15px 0;
+    font-size: 2.5rem;
+  }
+  .icon-menu, .icon-close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+  }
+  .icon-menu {
+    width: 35px;
+    right: 10px;
+    top: 35px;
+  }
+  .icon-close {
+    width: 35px;
+    right: 20px;
+    top: 30px;
+  }
+  .fullscren-menu {
+    position: absolute;
+    background-color: #FED530;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fullscren-menu ul {
+    display: block;
+  }
+}

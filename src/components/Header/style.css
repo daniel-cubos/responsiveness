@@ -4,19 +4,32 @@ header {
   justify-content: space-between;
   height: 144px;
   color: white;
-  padding: 0 30px;
+  width: 86%;
+  padding: 0 4%;
+  margin-bottom: 32px;
 }
 
-header ul {
-  display: flex;
-}
-
-header ul li {
-  list-style: none;
-  margin-left: 10px;
+.logo {
+  width: 180px;
   cursor: pointer;
 }
 
-header ul li:hover {
-  color: #FED530;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .logo {
+    margin-top: 30px;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    position: relative;
+  }
 }

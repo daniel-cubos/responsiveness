@@ -6,7 +6,9 @@ function MovieCard({ cover, title }) {
       className="container-card"
       style={{ backgroundImage: `url(${cover})` }}
     >
-      <h1>{title}</h1>
+      <div className="container-title">
+        <h1>{title}</h1>
+      </div>
     </div>
   );
 }

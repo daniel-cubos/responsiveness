@@ -1,16 +1,16 @@
+import Logo from '../../assets/logo.svg';
+import Menu from '../Menu';
 import './style.css';
 
 function Header() {
   return (
     <header>
-      Teste
-      <ul>
-        <li>Ação</li>
-        <li>Comédia</li>
-        <li>Drama</li>
-        <li>Documentários</li>
-        <li>Infantis</li>
-      </ul>
+      <img
+        className="logo"
+        src={Logo}
+        alt="logo"
+      />
+      <Menu />
     </header>
   );
 }
