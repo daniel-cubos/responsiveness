@@ -16,7 +16,7 @@ function App() {
       )
 
       const { results } = await response.json();
-      setMovies(results);
+      setMovies(results.reverse());
     }
 
     loadMovies();
